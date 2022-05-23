@@ -4,108 +4,112 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity6">
+    tools:context=".MainActivity7">
 
     <TextView
-        android:id="@+id/q7"
-        android:layout_width="wrap_content"
+        android:id="@+id/q9"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="51dp"
-        android:text="Q7. DOM ____?"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:text="Q9. When we can’t trigger JavaScript from an event handler?"
         android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/q8"
+        android:id="@+id/q10"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="53dp"
-        android:layout_marginEnd="18dp"
-        android:text="Q8. Which of the following is not a mouse event?"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:text="Q10. The following statement A ? B : C is equivalent to ______?"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Q7" />
+        app:layout_constraintTop_toBottomOf="@+id/Q9" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="34dp"
         android:backgroundTint="#4CAF50"
-        android:onClick="gotoMainActivity5"
         android:text="prev"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button5"
+        android:onClick="gotoMainActivity6"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="93dp"
-        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="34dp"
         android:backgroundTint="#4CAF50"
-        android:onClick="gotoMainActivity7"
-        android:text="next"
+        android:onClick="gotoMainActivity8"
+        android:text="Finish"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <RadioGroup
-        android:id="@+id/Q7"
+        android:id="@+id/Q9"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/q7">
+        app:layout_constraintTop_toBottomOf="@+id/q9">
 
         <RadioButton
-            android:id="@+id/a7"
+            android:id="@+id/a9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" is dedicated for JavaScript" />
+            android:text="when another event is still being processed" />
 
         <RadioButton
-            android:id="@+id/b7"
+            android:id="@+id/b9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" is a template engine" />
+            android:text="when Javascript is disabled" />
 
         <RadioButton
-            android:id="@+id/c7"
+            android:id="@+id/c9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="describes the structure of the HTML or XML document" />
+            android:text="when it runs locally rather than on the Web" />
+
     </RadioGroup>
 
     <RadioGroup
-        android:id="@+id/Q8"
+        android:id="@+id/Q10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/q8">
+        app:layout_constraintTop_toBottomOf="@+id/q10">
 
         <RadioButton
-            android:id="@+id/a8"
+            android:id="@+id/a10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="onmousemove" />
+            android:text="if (A) {B; C}" />
 
         <RadioButton
-            android:id="@+id/b8"
+            android:id="@+id/b10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="onmouseover" />
+            android:text="if (A == B) C" />
 
         <RadioButton
-            android:id="@+id/c8"
+            android:id="@+id/c10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="onmousescroller" />
+            android:text="if (A) {B} else {C}" />
     </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>

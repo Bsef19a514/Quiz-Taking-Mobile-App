@@ -1,6 +1,8 @@
 package com.example.activityandintent;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Button;
 import android.content.Intent;
@@ -8,9 +10,9 @@ import android.os.Bundle;
 
 
 public class MainActivity2 extends AppCompatActivity {
-Button btn;
+
 TextView txt1;
-TextView txt2;
+String userName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,10 +20,12 @@ TextView txt2;
         setContentView(R.layout.activity_main2);
         txt1=findViewById(R.id.msg_txtBox);
         Intent intent=getIntent();
-        String userName=intent.getStringExtra(("username"));
+        userName=intent.getStringExtra(("username"));
         txt1.setText("Welcome "+userName);
-        Intent intent2=new Intent(MainActivity2.this,)
-
-
+    }
+    public void gotoMainActivity3(View view){
+        Intent intent=new Intent(MainActivity2.this,MainActivity3.class);
+        intent.putExtra("username",userName);
+        startActivity(intent);
     }
 }
